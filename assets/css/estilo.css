@@ -1,0 +1,150 @@
+body
+{
+    background: #edf0f1;
+
+}
+
+header
+{
+
+}
+
+header input
+{
+    width: 100%;
+    height: 50px;
+    float: left;
+    color: #fff;
+    padding: 0 60px 0 0;
+    text-indent: 18px;
+    border-radius: 5px 25px 25px 5px;
+    background: rgba(255,255,255,0.2);
+    border: 0;
+    box-shadow: none;
+    outline: none;
+    font-weight: 400;
+    font-size: 16px;
+
+}
+
+header input::-webkit-input-placeholder
+{
+    color: rgba(255,255,255,0.75);
+}
+
+header button
+{
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 8px;
+    right:  15px;
+    border-radius: 25px;
+    background: #fff;
+    z-index: 2;
+    border: 0;
+    box-shadow: none;
+    outline: none;
+}
+body.ok
+{
+    background: #edf0f1;
+}
+button.btnAdd
+{
+    cursor: pointer;
+}
+ul.todo
+{
+    width: 100%;
+    float: left;
+    padding:15px;
+
+}
+ul.todo li
+{
+    list-style: none;
+    width: 100%;
+    float: left;
+    height: 50px;
+    background: #fff;
+    border-radius: 5px;
+    position: relative;
+    box-shadow: 0 1px 2px rgba(44,62,80,0.10);
+    margin: 0 0 10px 0 ;
+    padding: 12px 100px 0 20px ;
+}
+ul.todo li:last-of-type
+{
+    margin: 0;
+}
+
+ul.todo li .buttons
+{
+    height: 50px;
+    position: absolute;
+    top: 0;
+    right: 0;
+
+}
+ul.todo li .buttons button
+{
+    width: 50px;
+    height: 50px;
+    float: right;
+    background: none;
+    box-shadow: none;
+    outline: none;
+    position: relative;
+    cursor: pointer;
+    font-weight: 400;
+    text-align: center;
+    border: 1px solid transparent;
+    font-size: 1rem;
+    color: #5e5e5e;
+
+}
+ul.todo#completed li .buttons button.complete
+{
+
+    background: #e6e6e6;
+}
+ul.todo li .buttons button.complete:hover
+{
+    color: #5baae7;
+ }
+ul.todo#completed
+{
+    position: relative;
+    padding: 30px 0 0 0 ;
+}
+ul.todo#completed:before
+{
+    content: '';
+    width: 150px;
+    height: 1px;
+    background: #2e1c1b;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    margin: 0 0 0 -70px;
+}
+ul.todo#todo:empty:after
+{
+    content: 'Não tens para fazer.';
+    margin: 15px 0 0 0;
+}
+ul.todo#completed:empty:after
+{
+    content: 'Ainda não tens nenhuma tarefa completa.';
+}
+
+ul.todo#todo:after,
+ul.todo#completed:after
+{
+    width: 100%;
+    display: block;
+    text-align: center;
+    font-size: 14px;
+    color: #aaa;
+}
